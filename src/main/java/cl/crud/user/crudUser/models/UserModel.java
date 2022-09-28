@@ -2,13 +2,13 @@ package cl.crud.user.crudUser.models;
 
 import javax.persistence.*;
 
-@Entity               //Es un modelo real
-@Table(name = "user") //cambio el nombre de la tablasss
+@Entity
+@Table(name = "user")
 public class UserModel {
 
-    @Id                                                 // Es un ID
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Se genera automaticamente y se auto incrementa
-    @Column(unique = true, nullable = false)            //Es unico y no nulo*/
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique = true, nullable = false)
     private Long id;
 
     private String nombre;
